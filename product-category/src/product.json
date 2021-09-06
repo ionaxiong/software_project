@@ -1,5 +1,6 @@
 [
     {
+      "id": "1",
       "title": "iphone6",
       "price": 300.5,
       "date": "2021-09-06T09:06:18.161Z",
@@ -7,6 +8,7 @@
       "category": "1"
     },
     {
+      "id": "2",
       "title": "jacket",
       "price": 30.5,
       "date": "2021-09-06T09:06:18.161Z",
@@ -14,13 +16,15 @@
       "category": "2"
     },
     {
+      "id": "3",
       "title": "lollipop",
       "price": 2.5,
       "date": "2021-09-06T09:06:18.161Z",
       "pcs": 1,
       "category": "3"
     },
-    {
+    { 
+      "id": "4",
       "title": "chicken wings",
       "price": 5.5,
       "date": "2021-09-06T09:06:18.161Z",
@@ -28,6 +32,7 @@
       "category": "4"
     },
     {
+      "id": "5",
       "title": "salmon fish",
       "price": 20.2,
       "date": "2021-09-06T09:06:18.161Z",
