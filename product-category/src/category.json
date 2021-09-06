@@ -1,26 +1,26 @@
 [
     {
-        "id": "1",
+        "id": 1,
         "title": "electronic product"
     },
     {
-        "id": "2",
+        "id": 2,
         "title": "clothes"
     },
     {
-        "id": "3",
+        "id": 3,
         "title": "snack"
     },
     {
-        "id": "4",
+        "id": 4,
         "title": "meat"
     },
     {
-        "id": "5",
+        "id": 5,
         "title": "body care"
     },
     {
-        "id": "6",
+        "id": 6,
         "title": "cosmetics"
     }
 ]

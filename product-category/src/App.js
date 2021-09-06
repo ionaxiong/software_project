@@ -4,22 +4,27 @@ import * as api from "./api";
 function App() {
   useEffect(() => {
     async function fetchData() {
-      // get product from api
+      console.log("****************************************");
+      console.log("get product from api");
       const products = await api.getProducts();
       console.log(products);
 
-      //print each product
+      console.log("****************************************");
+      console.log("print each product");
       products.forEach((p) => console.log(p));
 
-      //get category from api
+      console.log("****************************************");
+      console.log("get category from api");
       const categories = await api.getCategory();
       console.log(categories);
 
-      //print each category
+      console.log("****************************************");
+      console.log("//print each category");
       categories.forEach((c) => console.log(c));
 
-      //select id from category where title = "meat"
-      //filter by category "meat"
+      console.log("****************************************");
+      console.log("select id from category where title = 'meat'");
+      console.log("filter by category 'meat'");
       const meatCategoryId = categories.find(
         (category) => category.title === "meat"
       ).id;
@@ -30,22 +35,40 @@ function App() {
       );
       console.log(meatProducts);
 
-      // map to title
+      console.log("****************************************");
+      console.log("map to title");
       const productTitles = products.map((product) => product.title);
       console.log(productTitles);
 
-      //sort products
+      console.log("****************************************");
+      console.log("sort products");
       console.log({ ...products.sort() });
 
-      //sort products by price
+      console.log("****************************************");
+      console.log("sort products by price");
       console.log({ ...products.sort((a, b) => a.price - b.price) });
 
-      //sort products by stocks
+      console.log("****************************************");
+      console.log("sort products by stocks");
       console.log({ ...products.sort((a, b) => a.pcs - b.pcs) });
 
-      // get by id
+      console.log("****************************************");
+      console.log("get by id");
       const product = products.find((p) => p.id === "3");
       console.log(product);
+
+      console.log("****************************************");
+      console.log("get type of the data in the product keys");
+      products.map((p) =>
+        console.log(
+          typeof p.id,
+          typeof p.title,
+          typeof p.price,
+          typeof p.date,
+          typeof p.pcs,
+          typeof p.category
+        )
+      );
     }
     fetchData();
   }, []);
