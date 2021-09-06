@@ -1,12 +1,22 @@
-import React from "react"
-import Category from "./category.json"
-import Product from "./product.json"
+import React, { useEffect } from "react";
+import * as api from "./api";
 
 function App() {
-  return (
-  <div>
-  </div>    
-  )
-} 
+  useEffect(() => {
+    async function fetchData() {
+      const products = await api.getProducts();
+      console.log(products)
 
-export default App
+      // filter by category
+
+      // map to title
+
+      // get by id 
+    }
+    fetchData()
+  }, []);
+
+  return <div></div>;
+}
+
+export default App;
